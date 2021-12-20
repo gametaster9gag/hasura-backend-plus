@@ -68,7 +68,7 @@ async function loginAccount({ body, headers }: Request, res: Response): Promise<
     }
   }
 
-  // else, login users normally
+  // else, login platform_users normally
   const { password } = await (AUTHENTICATION.MAGIC_LINK_ENABLED
     ? loginSchemaMagicLink
     : loginSchema

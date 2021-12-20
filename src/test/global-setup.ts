@@ -11,7 +11,7 @@ export default async (): Promise<void> => {
   })
   try {
     await client.connect()
-    await client.query(`ALTER TABLE "public"."users" ADD COLUMN IF NOT EXISTS "name" text NULL;
+    await client.query(`ALTER TABLE "public"."platform_users" ADD COLUMN IF NOT EXISTS "name" text NULL;
   INSERT INTO auth.roles (role) VALUES ('editor'), ('super-admin') ON CONFLICT DO NOTHING;;`)
   } finally {
     await client.end()

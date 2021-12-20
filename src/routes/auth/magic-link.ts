@@ -55,7 +55,7 @@ async function magicLink({ query }: Request, res: Response): Promise<unknown> {
   })
 
   // Redirect user with refresh token.
-  // This is both for when users log in and register.
+  // This is both for when platform_users log in and register.
   return res.redirect(
     `${APPLICATION.REDIRECT_URL_SUCCESS}${url_operator}refresh_token=${refresh_token}`
   )

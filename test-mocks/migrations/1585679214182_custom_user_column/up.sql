@@ -1,5 +1,5 @@
 ALTER TABLE
-  "public"."users"
+  "public"."platform_users"
 ADD
   COLUMN "name" text NULL;
 

@@ -1,1 +1,1 @@
-ALTER TABLE "public"."users" DROP COLUMN "name";
+ALTER TABLE "public"."platform_users" DROP COLUMN "name";
